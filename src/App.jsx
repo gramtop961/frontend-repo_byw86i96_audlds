@@ -17,21 +17,21 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans antialiased">
-      <header className="sticky top-0 z-20 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 text-white">
-          <div className="flex items-center gap-2">
-            <div className="h-6 w-6 rounded bg-emerald-500" />
-            <span className="text-sm font-semibold">Supply Quo</span>
-          </div>
-          <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex">
-            <a href="#features" className="hover:text-white">Features</a>
-            <a href="#how-it-works" className="hover:text-white">How it works</a>
-            <a href="#pricing" className="hover:text-white">Pricing</a>
+    <div className="min-h-screen bg-white font-sans antialiased">
+      <header className="sticky top-0 z-20 w-full border-b border-slate-200/60 bg-white/80 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+          <a href="#" className="flex items-center gap-2">
+            <div className="h-6 w-6 rounded-md bg-gradient-to-br from-cyan-500 to-blue-600" />
+            <span className="text-sm font-semibold text-slate-900">Supply Quo</span>
+          </a>
+          <nav className="hidden items-center gap-6 text-sm text-slate-600 md:flex">
+            <a href="#features" className="hover:text-slate-900">Features</a>
+            <a href="#how-it-works" className="hover:text-slate-900">How it works</a>
+            <a href="#pricing" className="hover:text-slate-900">Pricing</a>
           </nav>
           <button
             onClick={scrollToPricing}
-            className="rounded-md bg-white px-3 py-2 text-xs font-semibold text-slate-900 shadow hover:bg-slate-100"
+            className="rounded-lg bg-slate-900 px-3 py-2 text-xs font-semibold text-white shadow-sm hover:bg-slate-800"
           >
             Get Started
           </button>
@@ -44,11 +44,10 @@ export default function App() {
         <div id="how-it-works"><HowItWorks /></div>
         <div id="pricing" ref={pricingRef}><Pricing /></div>
 
-        {/* Simple CTA section */}
-        <section id="request-demo" className="bg-slate-900 py-16 text-white">
+        <section id="request-demo" className="bg-slate-900 py-20 text-white">
           <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center">
             <h3 className="text-2xl font-semibold sm:text-3xl">See Supply Quo in action</h3>
-            <p className="max-w-2xl text-slate-300">Request a demo and we’ll walk you through purchase requests, item-level quotes, auto POs, and real-time chat.</p>
+            <p className="max-w-2xl text-white/80">Request a demo — we’ll walk you through RFQs, line-item acceptance, auto POs, and real-time chat.</p>
             <form
               onSubmit={(e) => e.preventDefault()}
               className="grid w-full grid-cols-1 gap-3 sm:grid-cols-[1fr_1fr_auto]"
@@ -57,21 +56,21 @@ export default function App() {
                 type="email"
                 required
                 placeholder="Work email"
-                className="w-full rounded-md border border-white/10 bg-white/10 px-4 py-3 text-white placeholder-white/60 focus:border-emerald-400 focus:outline-none"
+                className="w-full rounded-lg border border-white/15 bg-white/10 px-4 py-3 text-white placeholder-white/60 backdrop-blur focus:border-cyan-400 focus:outline-none"
               />
               <input
                 type="tel"
                 placeholder="Phone (UAE supported)"
-                className="w-full rounded-md border border-white/10 bg-white/10 px-4 py-3 text-white placeholder-white/60 focus:border-emerald-400 focus:outline-none"
+                className="w-full rounded-lg border border-white/15 bg-white/10 px-4 py-3 text-white placeholder-white/60 backdrop-blur focus:border-cyan-400 focus:outline-none"
               />
               <button
                 type="submit"
-                className="rounded-md bg-emerald-500 px-6 py-3 font-semibold text-white hover:bg-emerald-600"
+                className="rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-cyan-500/20 hover:from-cyan-400 hover:to-blue-500"
               >
                 Request Demo
               </button>
             </form>
-            <p className="text-xs text-slate-400">By proceeding, you agree to our Terms and Privacy Policy.</p>
+            <p className="text-xs text-white/60">By proceeding, you agree to our Terms and Privacy Policy.</p>
           </div>
         </section>
       </main>
