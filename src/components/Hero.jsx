@@ -6,24 +6,24 @@ export default function Hero({ onPrimaryCtaClick, onSecondaryCtaClick }) {
     <section className="relative min-h-[80vh] w-full overflow-hidden bg-slate-950 text-white">
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/LU2mWMPbF3Qi1Qxh/scene.splinecode"
+          scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      {/* Soft gradient overlay to improve text contrast */}
+      {/* Soft gradient overlay to improve text contrast without blocking interaction */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/40 to-slate-950/80" />
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center px-6 pt-24 pb-16 text-center md:pt-28">
         <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur">
           <span className="inline-block h-2 w-2 rounded-full bg-emerald-400" />
-          Live on Web & Mobile
+          3D • Interactive • Futuristic
         </span>
         <h1 className="text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
           Supply Quo
         </h1>
         <p className="mt-4 max-w-3xl text-balance text-base text-slate-200 sm:text-lg">
-          Streamline Your B2B procurement process. Connect buyers and suppliers, compare quotations, and automate POs — all in one modern platform.
+          A dynamic 3D experience meets real procurement automation. Compare quotes, automate POs, and collaborate in real-time.
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
